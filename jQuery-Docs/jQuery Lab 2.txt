@@ -1,0 +1,555 @@
+-------------------jQuery Hide Show Effect------------------
+
+<!DOCTYPE html>
+<html>
+<head>
+    <style type="text/css">
+        p {
+            background-color: #99FFFF;
+            font-size: 40px;
+            font-style: italic;
+            font-weight: bold
+ 	font-family: Verdana;
+        }
+    </style>
+    <script src="jquery-3.3.1.js"></script>
+    <script>
+        $(document).ready(function() {
+            $("#hide").click(function() {
+                $("p").hide();
+            });
+            $("#show").click(function() {
+                $("p").show();
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <p>If you click on the "Hide" button, I will disappear.</p>
+
+    <button id="hide">Hide</button>
+    <button id="show">Show</button>
+
+</body>
+
+</html>
+---------------jQuery toggle() Effect----------------------
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>jQuery toggle() method</title>
+    <style type="text/css">
+        p {
+            background-color: #99FFFF;
+            font-size: 40px;
+            font-style: italic;
+            font-weight: bold;
+            font-family: Verdana;
+        }
+    </style>
+    <script src="jquery-3.3.1.js"></script>
+    <script>
+        $(document).ready(function() {
+            $("#toggle").click(function() {
+                $("p").toggle();
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <button id="toggle">Hide/Show</button>
+    <p>Paragraph will hide after click</p>
+</body>
+
+</html>
+
+---------------jQuery slideDown() Method----------------------
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>jQuery slideDown() method</title>
+    <style type="text/css">
+        #slide,
+        #click {
+            font-family: Verdana;
+            font-size: 14px;
+            background: #CCCCCC;
+            border: 1px solid #c3c3c3;
+            text-align: center;
+        }
+        
+        #slide {
+            display: none;
+            height: 60px;
+        }
+    </style>
+
+    <script src="jquery-3.3.1.js"></script>
+    <script>
+        $(document).ready(function() {
+            $("#click").click(function() {
+                $("#slide").slideDown("slow");
+            });
+        });
+    </script>
+
+</head>
+
+<body>
+    <div id="slide">
+        <p>This paragraph text represent slide panel text and it's running slide effect.</p>
+    </div>
+    <p id="click">Click me to slide down</p>
+</body>
+
+</html>
+---------------jQuery slideUp() Method----------------------
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>jQuery slideUp() method</title>
+    <script src="jquery-3.3.1.js"></script>
+    <script>
+        $(document).ready(function() {
+            $("#click").click(function() {
+                $("#slide").slideUp("slow");
+            });
+        });
+    </script>
+    <style type="text/css">
+        #slide,
+        #click {
+            font-family: Verdana;
+            font-size: 14px;
+            background: #CCCCCC;
+            border: 1px solid #c3c3c3;
+            text-align: center;
+        }
+        
+        #slide {
+            height: 60px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="slide">
+        <p>This paragraph text represent slide panel text and it's running slide effect.</p>
+    </div>
+    <p id="click">Click me to slide down</p>
+</body>
+
+</html>
+
+---------------jQuery slideToggle() Method----------------------
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>jQuery slideToggle() method</title>
+    <script src="jquery-3.3.1.js"></script>
+    <style type="text/css">
+        #slide,
+        #click {
+            font-family: Verdana;
+            font-size: 14px;
+            background: #CCCCCC;
+            border: 1px solid #c3c3c3;
+            text-align: center;
+        }
+        
+        #slide {
+            display: none;
+            height: 60px;
+        }
+    </style>
+
+    <script>
+        $(document).ready(function() {
+            $("#click").click(function() {
+                $("#slide").slideToggle("slow");
+            });
+        });
+    </script>
+
+</head>
+
+<body>
+    <div id="slide">
+        <p>This paragraph text represent slide panel text and it's running slide effect.</p>
+    </div>
+    <p id="click">Click me to slide toggle</p>
+</body>
+
+</html>
+---------------jQuery fadeIn() Method----------------------
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>jQuery fadeIn() and fadeOut() methods</title>
+    <script src="jquery-3.3.1.js"></script>
+    <style type="text/css">
+        div {
+            background: #FC5E5E;
+            font-family: arial;
+            padding: 10px;
+        }
+    </style>
+    <script>
+        $(document).ready(function() {
+            $("#fadein").click(function() {
+                $("div").fadeIn(3000);
+            });
+            $("#fadeout").click(function() {
+                $("div").fadeOut(3000);
+            });
+        });
+    </script>
+
+</head>
+
+<body>
+    <button id="fadein">Fade In (3 Seconds)</button>
+    <button id="fadeout">Fade Out (3 Seconds)</button>
+    <br /><br />
+    <div>This element represent fade in and fade out effect.</div>
+</body>
+
+</html>
+---------------jQuery fadeOut() Method----------------------
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>jQuery fadeIn() and fadeOut() methods</title>
+    <script src="jquery-3.3.1.js"></script>
+    <style type="text/css">
+        div {
+            background: #FC5E5E;
+            font-family: arial;
+            padding: 10px;
+        }
+    </style>
+    <script>
+        $(document).ready(function() {
+            $("#fadein").click(function() {
+                $("div").fadeIn(3000);
+            });
+            $("#fadeout").click(function() {
+                $("div").fadeOut(3000);
+            });
+        });
+    </script>
+
+</head>
+
+<body>
+    <button id="fadein">Fade In (3 Seconds)</button>
+    <button id="fadeout">Fade Out (3 Seconds)</button>
+    <br /><br />
+    <div>This element represent fade in and fade out effect.</div>
+</body>
+
+</html>
+---------------jQuery fadeToggle() Method----------------------
+<!DOCTYPE html>
+<html>
+<head>
+  <title>jQuery fadeToggle() method</title>
+   <script src="jquery-3.3.1.js"></script>
+  <script>
+    $(document).ready(function() {
+      $("#fadetoggle").click(function(){
+        $("div").fadeToggle(3000);
+      });
+    });
+  </script>
+  <style type="text/css"> 
+    div {
+      background: #FC5E5E;
+      font-family: arial;
+      padding: 10px;
+    }
+  </style>
+</head>
+<body>
+  <button id="fadetoggle">Fade In/Out (3 Seconds)</button>
+  <br /><br />
+  <div>This element represent fade in and fade out effect.</div>
+</body> 
+</html>
+
+---------------jQuery fadeTo() Method----------------------
+<!DOCTYPE html>
+<html>
+<head>
+  <title>jQuery fadeTo() method</title>
+  <script src="jquery-3.3.1.js"></script>
+  <script>
+    $(document).ready(function() {
+      $("#fadeTo").click(function(){
+        $("div").fadeTo(3000, 0.3);
+      });
+    });
+  </script>
+  <style type="text/css"> 
+    div {
+      background: #FC5E5E;
+      font-family: arial;
+      padding: 10px;
+    }
+  </style>
+</head>
+<body>
+  <button id="fadeTo">fadeTo (3 Seconds)</button>
+  <br /><br />
+  <div>This element represent fade in/out effect.</div>
+</body> 
+</html>
+
+---------------1.jQuery animate() - Single Property----------------------
+<!DOCTYPE html>
+<html>
+<head>
+  <title>jQuery animate() method</title>
+ <script src="jquery-3.3.1.js"></script>
+  <script>
+    $(document).ready(function() {
+      $("button").click(function(){
+        $("div").animate({fontSize:"60px"}, 1000);
+      });
+    });
+  </script>
+  <style type="text/css"> 
+    div {
+      padding: 10px;
+      font-family: arial;
+      background: #FC5E5E;
+      position:relative;
+    }
+  </style>
+</head>
+<body>
+  <button>Start Animation</button>
+  <br /><br />
+  <div>This element represent animate effect.</div>
+</body> 
+</html>
+
+
+---------------jQuery animate() - Multiple Properties----------------------
+<!DOCTYPE html>
+<html>
+<head>
+  <title>jQuery animate() method</title>
+  <script src="jquery-3.3.1.js"></script>
+  <script>
+    $(document).ready(function() {
+      $("#btnstart").click(function(){
+        $("#animatebox").animate({
+          height: "300px",
+          width: "300px",
+          opacity: 0.5,
+          marginLeft: "100px",
+          borderWidth: "10px",
+          fontSize: "40px"
+        });
+      });
+      $("#btnstop").click(function(){
+        $("#animatebox").animate({
+          height: "100px",
+          width: "100px",
+          opacity: 1,
+          marginLeft: "10px",
+          borderWidth: "5px",
+          fontSize: "15px"
+        });
+      });
+    });
+  </script>
+  <style type="text/css">
+    #animatebox {
+      width: 100px;
+      height: 100px;
+      background: #FC5E5E;
+      margin-left: 10px;
+      border-color: #de2d2d;
+      border-style: solid;
+      border-width: 5px;
+      font-size: 15px;
+    }
+  </style>
+</head>
+<body>
+  <button id="btnstart">Start Animation</button>
+  <button id="btnstop">Restore Animation</button>
+  <br /><br />
+  <div id="animatebox">jQuery Animate</div>
+</body> 
+</html>
+
+--------------jQuery animate() - Relative Values----------------------
+<!DOCTYPE html>
+<html>
+<head>
+  <title>jQuery animate() method</title>
+  <script src="jquery-3.3.1.js"></script>
+  <script>
+    $(document).ready(function() {
+      $("#btnstart").click(function(){
+          $("div").animate({
+            height: '+=200px',
+            width: '+=200px'
+          });
+      });
+      $("#btnstop").click(function(){
+          $("div").animate({
+            height: '-=200px',
+            width: '-=200px'
+          });
+      });
+    });
+  </script>
+  <style type="text/css">
+    #animatebox {
+      width: 100px;
+      height: 100px;
+      position: absolute;
+      background: #FC5E5E;
+      border-color: #de2d2d;
+    }
+  </style>
+</head>
+<body>
+  <button id="btnstart">Start Animation</button>
+  <button id="btnstop">Restore Animation</button>
+  <br /><br />
+  <div id="animatebox"></div>
+</body> 
+</html>
+------------------jQuery animate() - Queued Animations-------------------
+<!DOCTYPE html>
+<html>
+<head>
+  <title>jQuery animate() method</title>
+  <script src="jquery-latest.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      $("#btnstart").click(function(){
+        var $box = $("#animatebox");
+        $box.animate({height: "300px"});
+        $box.animate({width: "300px"});
+        $box.animate({opacity: 0.5});
+        $box.animate({marginLeft: "100px"});
+        $box.animate({borderWidth: "10px"});
+        $box.animate({fontSize: "40px"});
+      });
+      $("#btnstop").click(function(){
+        var $box = $("#animatebox");
+        $box.animate({fontSize: "15px"});
+        $box.animate({height: "100px"});
+        $box.animate({width: "100px"});
+        $box.animate({opacity: 1});
+        $box.animate({marginLeft: "10px"});
+        $box.animate({borderWidth: "5px"});
+      });
+    });
+  </script>
+  <style type="text/css">
+    #animatebox {
+      width: 100px;
+      height: 100px;
+      background: #FC5E5E;
+      margin-left: 10px;
+      border-color: #de2d2d;
+      border-style: solid;
+      border-width: 5px;
+      font-size: 15px;
+    }
+  </style>
+</head>
+<body>
+  <button id="btnstart">Start Animation</button>
+  <button id="btnstop">Restore Animation</button>
+  <br /><br />
+  <div id="animatebox">jQuery Animate</div>
+</body> 
+</html>
+------------------jQuery animate() - Pre-defined Values----------------
+<!DOCTYPE html>
+<html>
+<head>
+  <title>jQuery animate() method</title>
+  <script src="jquery-latest.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      $("#btntoggle").click(function(){
+        $("#animatebox").animate({
+          width: 'toggle'
+        });
+      });
+    });
+  </script>
+  <style type="text/css">
+    #animatebox {
+      width: 70%;
+      height: 100px;
+      background: #FC5E5E;
+      border-color: #de2d2d;
+    }
+  </style>
+</head>
+<body>
+  <button id="btntoggle">Toggle Animation</button>
+  <br /><br />
+  <div id="animatebox"></div>
+</body> 
+</html>
+-----------------jQuery stop() Method---------------------
+<!DOCTYPE html>
+<html>
+<head>
+  <title>jQuery stop() method</title>
+  <script src="jquery-latest.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      $("#btnstart").click(function(){
+          $("div").animate({
+            marginLeft: '+=200px',
+          }, 3000);
+      });
+      $("#btnstop").click(function(){
+          $("div").stop();
+      });
+      $("#btnback").click(function(){
+          $("div").animate({
+            marginLeft: '0px',
+          }, 3000);
+      });
+    });
+  </script>
+  <style type="text/css">
+    #animatebox {
+      width: 100px;
+      height: 100px;
+      position: absolute;
+      background: #FC5E5E;
+      border-color: #de2d2d;
+    }
+  </style>
+</head>
+<body>
+  <button id="btnstart">Start</button>
+  <button id="btnstop">Stop</button>
+  <button id="btnback">Back</button>
+  <br /><br />
+  <div id="animatebox"></div>
+</body> 
+</html>
